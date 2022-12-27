@@ -1,5 +1,3 @@
-let count = 0;
-
 const datas = [
     { id: 0, name: "Alan", jobs : ['dev junior', 'dev fullstack'], password : "tyeedsa00" },
     { id: 1, name: "Albert", jobs : ['doctor'], password : "tyeidii00" },
@@ -21,7 +19,6 @@ function isDoctor(item){
     if (item.jobs){
         for (let i = 0; i < item.jobs.length; i++){    
             if (item.jobs[i] === "doctor"){
-                count = count+1;
                 return true;
             }
         }
