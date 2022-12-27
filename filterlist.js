@@ -46,6 +46,8 @@ const jobless = datas.map(function(element){
     }
 });
 
-console.log(jobless.filter((names => {
+const joblesslist = jobless.filter((names => {
     return names !== null;
-    })));
+    }))
+
+console.log(joblesslist);
