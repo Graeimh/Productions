@@ -25,8 +25,9 @@ function isDoctor(item){
     }
     return false;
 }
+const numberDocs = datas.filter(isDoctor).length;
 
-console.log(datas.filter(isDoctor).length);
+console.log(numberDocs);
 
 // 2. les noms des dev fullstack
 
