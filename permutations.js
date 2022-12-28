@@ -31,7 +31,7 @@ const { name : na, notes : no, average : av} = student;
   
 // constantes
 console.log("//2");
-console.log(na, no, av);
+console.log(na, no, av.toFixed(2));
 
 /*  ///////////////////////////////////////////////////
     /3  Exercice iterate destructuring
@@ -58,7 +58,7 @@ const students = [
     },
 ];
 
-console.log("//3")
+console.log("//3");
 for (stud of students){
     const { name, family: {sister}} = stud;
     console.log("Nom :", name);
@@ -74,7 +74,7 @@ const str1 = ["one", "two"];
 const str2 = ["three", "four"];
 
 const strMerge = [ ...str1, ...str2 ];
-console.log("//4")
+console.log("//4");
 console.log(strMerge);
 
 /*  ///////////////////////////////////////////////////
@@ -92,7 +92,7 @@ function accumulator(numbers, acc = 0) {
         return accumulator(numbers, acc);
     } else {
 
-        return acc
+        return acc;
     }
 }
 
@@ -125,7 +125,7 @@ const studentsB = [
   ];
 
 const clone = JSON.parse(JSON.stringify(studentsB));
-studentsB[1].name = "Johnny"
+studentsB[1].name = "Johnny";
 
 console.log(studentsB);
 console.log(clone);
